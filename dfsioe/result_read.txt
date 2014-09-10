@@ -1,0 +1,70 @@
+----- TestDFSIO ----- : read
+           Date & time: Mon Aug 19 17:10:00 PDT 2013
+       Number of files: 1
+Total MBytes processed: 200
+     Throughput mb/sec: 293.68575624082234
+Average IO rate mb/sec: 293.6857604980469
+ IO rate std deviation: 0.04696470855602054
+    Test exec time sec: 16.377
+
+-- Extended Metrics --   : read
+Result file name         : /root/hibench/dfsioe/throughput_read.csv
+Sampling overhead        : 2.349486%
+Reference Start Time     : 1376957383743
+Aggregated throughput results are unavailable, because the concurrency of Mappers is too low and consequently the aggregated throughput measurement is not very meaningful
+Please adjust your test workload and try again.
+
+-- Result Analyse -- : 14s
+----- TestDFSIO ----- : read
+           Date & time: Tue Aug 20 10:15:06 PDT 2013
+       Number of files: 10
+Total MBytes processed: 1000
+     Throughput mb/sec: 53.77789728421619
+Average IO rate mb/sec: 57.535980224609375
+ IO rate std deviation: 16.9543171557677
+    Test exec time sec: 32.465
+
+-- Extended Metrics --   : read
+Result file name         : /tmp/hibench/dfsioe/throughput_read.csv
+Sampling overhead        : 1.8069373%
+Reference Start Time     : 1377018874255
+0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,1,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Average of Aggregated Throughput : 143.21444194687822 mb/sec
+              Standard Deviation : 9.869240158776773 mb/sec
+   Time spots Counted in Average : ...........1.......1.............. 
+
+-- Result Analyse -- : 18s
+----- TestDFSIO ----- : read
+           Date & time: Tue Aug 20 11:07:35 PDT 2013
+       Number of files: 10
+Total MBytes processed: 100
+     Throughput mb/sec: 35.587188612099645
+Average IO rate mb/sec: 38.958412170410156
+ IO rate std deviation: 11.700535096783515
+    Test exec time sec: 21.296
+
+-- Extended Metrics --   : read
+Result file name         : /tmp/hibench/dfsioe/throughput_read.csv
+Sampling overhead        : 3.2740214%
+Reference Start Time     : 1377022033804
+Aggregated throughput results are unavailable, because the concurrency of Mappers is too low and consequently the aggregated throughput measurement is not very meaningful
+Please adjust your test workload and try again.
+
+-- Result Analyse -- : 16s
+----- TestDFSIO ----- : read
+           Date & time: Thu Feb 06 22:02:53 PST 2014
+       Number of files: 10
+Total MBytes processed: 100
+     Throughput mb/sec: 50.42864346949067
+Average IO rate mb/sec: 52.254913330078125
+ IO rate std deviation: 10.20372125242911
+    Test exec time sec: 26.004
+
+-- Extended Metrics --   : read
+Result file name         : /tmp/hibench-mod/dfsioe/throughput_read.csv
+Sampling overhead        : 2.6222894%
+Reference Start Time     : 1391752947366
+Aggregated throughput results are unavailable, because the concurrency of Mappers is too low and consequently the aggregated throughput measurement is not very meaningful
+Please adjust your test workload and try again.
+
+-- Result Analyse -- : 14s

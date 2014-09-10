@@ -1,0 +1,30 @@
+Buildfile: build.xml
+
+clean:
+   [delete] Deleting directory /tmp/hibench-mod/common/autogen/build
+   [delete] Deleting directory /tmp/hibench-mod/common/autogen/dist
+
+init:
+    [mkdir] Created dir: /tmp/hibench-mod/common/autogen/build/classes
+    [mkdir] Created dir: /tmp/hibench-mod/common/autogen/dist
+
+compile:
+    [javac] Compiling 36 source files to /tmp/hibench-mod/common/autogen/build/classes
+    [javac] org/apache/hadoop/fs/Path.class(org/apache/hadoop/fs:Path.class): warning: Cannot find annotation method 'value()' in type 'org.apache.hadoop.classification.InterfaceAudience.LimitedPrivate': class file for org.apache.hadoop.classification.InterfaceAudience not found
+    [javac] org/apache/hadoop/fs/FSDataOutputStream.class(org/apache/hadoop/fs:FSDataOutputStream.class): warning: Cannot find annotation method 'value()' in type 'org.apache.hadoop.classification.InterfaceAudience.LimitedPrivate'
+    [javac] org/apache/hadoop/fs/FileSystem.class(org/apache/hadoop/fs:FileSystem.class): warning: Cannot find annotation method 'value()' in type 'org.apache.hadoop.classification.InterfaceAudience.LimitedPrivate'
+    [javac] org/apache/hadoop/fs/FileSystem.class(org/apache/hadoop/fs:FileSystem.class): warning: Cannot find annotation method 'value()' in type 'org.apache.hadoop.classification.InterfaceAudience.LimitedPrivate'
+    [javac] org/apache/hadoop/fs/FileSystem.class(org/apache/hadoop/fs:FileSystem.class): warning: Cannot find annotation method 'value()' in type 'org.apache.hadoop.classification.InterfaceAudience.LimitedPrivate'
+    [javac] org/apache/hadoop/io/UTF8.class(org/apache/hadoop/io:UTF8.class): warning: Cannot find annotation method 'value()' in type 'org.apache.hadoop.classification.InterfaceAudience.LimitedPrivate'
+    [javac] org/apache/hadoop/fs/FSDataInputStream.class(org/apache/hadoop/fs:FSDataInputStream.class): warning: Cannot find annotation method 'value()' in type 'org.apache.hadoop.classification.InterfaceAudience.LimitedPrivate'
+    [javac] org/apache/hadoop/fs/FileContext.class(org/apache/hadoop/fs:FileContext.class): warning: Cannot find annotation method 'value()' in type 'org.apache.hadoop.classification.InterfaceAudience.LimitedPrivate'
+    [javac] org/apache/hadoop/fs/FileContext.class(org/apache/hadoop/fs:FileContext.class): warning: Cannot find annotation method 'value()' in type 'org.apache.hadoop.classification.InterfaceAudience.LimitedPrivate'
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 9 warnings
+
+package:
+      [jar] Building jar: /tmp/hibench-mod/common/autogen/dist/datatools.jar
+
+BUILD SUCCESSFUL
+Total time: 1 second

@@ -1,0 +1,10 @@
+USE DEFAULT;
+set mapred.map.tasks=2;
+set mapred.reduce.tasks=1;
+set hive.stats.autogather=false;
+DROP TABLE uservisits;
+DROP TABLE uservisits_aggre;
+CREATE EXTERNAL TABLE uservisits (sourceIP STRING,destURL STRING,visitDate STRING,adRevenue DOUBLE,userAgent STRING,countryCode STRING,languageCode STRING,searchWord STRING,duration INT ) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS SEQUENCEFILE LOCATION '/HiBench/Hive/Input/uservisits';
+CREATE TABLE uservisits_aggre ( sourceIP STRING, sumAdRevenue DOUBLE) STORED AS SEQUENCEFILE ;
+INSERT OVERWRITE TABLE uservisits_aggre SELECT sourceIP, SUM(adRevenue) FROM uservisits GROUP BY sourceIP;
+
