@@ -27,7 +27,7 @@ DIR=`cd $bin/../; pwd`
 $HADOOP_HOME/bin/hadoop dfs -rmr $INPUT_HDFS
 
 # Generate the terasort data
-$HADOOP_HOME/bin/hadoop jar /usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples-2.2.0.2.1.0.0-92.jar teragen \
+$HADOOP_HOME/bin/hadoop jar $MAPRED_HOME/$MAPRED_EX teragen \
     -D mapred.map.tasks=$NUM_MAPS \
     $DATASIZE $INPUT_HDFS
 

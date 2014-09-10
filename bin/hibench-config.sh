@@ -24,8 +24,9 @@ export HADOOP_HOME="/usr/lib/hadoop"
 export HADOOP_CONF_DIR="/etc/hadoop/conf"
 export HIVE_HOME="/usr/lib/hive"
 export MAHOUT_HOME="/usr/lib/mahout"
+export MAPRED_HOME="/usr/lib/hadoop-mapreduce"
 
-export MAPRED_EX="hadoop-mapreduce-examples-2.4.0.2.1.1.0-385.jar"
+export MAPRED_EX="hadoop-mapreduce-examples.jar"
 
 ###################### Global Paths ##################
 if [ -z "$HIBENCH_HOME" ]; then

@@ -41,7 +41,7 @@ SIZE=`$HADOOP_HOME/bin/hadoop fs -dus $INPUT_HDFS | awk '{ print $1 }'`
 START_TIME=`timestamp`
 
 # run bench
-$HADOOP_HOME/bin/hadoop jar /usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples-2.2.0.2.1.0.0-92.jar sort \
+$HADOOP_HOME/bin/hadoop jar $MAPRED_HOME/$MAPRED_EX sort \
     $COMPRESS_OPT \
     -outKey org.apache.hadoop.io.Text \
     -outValue org.apache.hadoop.io.Text \

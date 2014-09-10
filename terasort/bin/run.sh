@@ -31,7 +31,7 @@ SIZE=`$HADOOP_HOME/bin/hadoop fs -dus $INPUT_HDFS | awk '{ print $1 }'`
 START_TIME=`timestamp`
 
 # run bench
-$HADOOP_HOME/bin/hadoop jar /usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples-2.2.0.2.1.0.0-92.jar terasort -D mapred.reduce.tasks=$NUM_REDS $INPUT_HDFS $OUTPUT_HDFS
+$HADOOP_HOME/bin/hadoop jar $MAPRED_HOME/$MAPRED_EX terasort -D mapred.reduce.tasks=$NUM_REDS $INPUT_HDFS $OUTPUT_HDFS
 
 # post-running
 END_TIME=`timestamp`

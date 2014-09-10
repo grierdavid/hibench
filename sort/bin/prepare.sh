@@ -36,7 +36,7 @@ else
 fi
 
 # generate data
-$HADOOP_HOME/bin/hadoop jar /usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples-2.2.0.2.1.0.0-92.jar randomtextwriter \
+$HADOOP_HOME/bin/hadoop jar $MAPRED_HOME/$MAPRED_EX randomtextwriter \
     -D test.randomtextwrite.bytes_per_map=$((${DATASIZE} / ${NUM_MAPS})) \
     -D test.randomtextwrite.maps_per_host=${NUM_MAPS} \
     $COMPRESS_OPT \

@@ -41,7 +41,7 @@ SIZE=`$HADOOP_HOME/bin/hadoop fs -dus $INPUT_HDFS | awk '{ print $2 }'`
 START_TIME=`timestamp`
 
 # run bench
-$HADOOP_HOME/bin/hadoop jar /usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples-2.2.0.2.1.0.0-92.jar wordcount \
+$HADOOP_HOME/bin/hadoop jar $MAPRED_HOME/$MAPRED_EX wordcount \
     $COMPRESS_OPT \
     -D mapred.reduce.tasks=${NUM_REDS} \
     -D mapreduce.inputformat.class=org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat \
