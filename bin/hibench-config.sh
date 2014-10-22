@@ -19,6 +19,7 @@ bin=$(cd -P -- "$(dirname -- "$this")" && pwd -P)
 script="$(basename -- "$this")"
 this="$bin/$script"
 
+export REGION="ord"
 export HIBENCH_VERSION="2.2"
 export HADOOP_HOME="/usr/lib/hadoop"
 export HADOOP_CONF_DIR="/etc/hadoop/conf"
@@ -27,6 +28,7 @@ export MAHOUT_HOME="/usr/lib/mahout"
 export MAPRED_HOME="/usr/lib/hadoop-mapreduce"
 
 export MAPRED_EX="hadoop-mapreduce-examples.jar"
+export SWIFT_ROOT="swift://swiftbench.rack-${REGION}/"
 
 ###################### Global Paths ##################
 if [ -z "$HIBENCH_HOME" ]; then
